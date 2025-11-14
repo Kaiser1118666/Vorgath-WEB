@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorgath - Joyería Exclusiva</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Fuentes del manual corporativo -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>VORGATH</h1>
+                <span>Joyería Exclusiva</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <button id="carrito-btn" class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span id="carrito-contador">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Elegancia Atemporal</h2>
+            <p>Joyería de lujo artesanal que fusiona tradición centenaria con diseño contemporáneo</p>
+            <a href="#productos" class="btn">Explorar Colección</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="anillos">Anillos</button>
+                <button class="filtro-btn" data-categoria="collares">Collares</button>
+                <button class="filtro-btn" data-categoria="aretes">Aretes</button>
+                <button class="filtro-btn" data-categoria="pulseras">Pulseras</button>
+            </div>
+            <div class="productos-grid" id="productos-grid">
+                <!-- Los productos se cargan dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <h2>Vorgath - Tradición y Excelencia</h2>
+                    
+                    <p>Desde 1985, Vorgath ha sido sinónimo de calidad y elegancia en el mundo de la joyería. Cada pieza es cuidadosamente diseñada y elaborada por nuestros maestros joyeros, combinando técnicas tradicionales con diseños contemporáneos.
+
+Nos enorgullecemos de utilizar solo materiales de la más alta calidad, incluyendo oro de 18k, plata esterlina y diamantes certificados, garantizando la excelencia en cada creación.</p>
+                    <a href="#contacto" class="btn">Conoce Más</a>
+                </div>
+                <div class="nosotros-img">
+                    <div class="img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Taller Vorgath" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="info-item">
+                        <h4>Dirección</h4>
+                        <p>Calle 27 # 21-59, Sincelejo, Colombia</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Teléfono Principal</h4>
+                        <p>+57 301 744-8210</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email General</h4>
+                        <p>Vorgath@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Horario</h4>
+                        <p>Lunes a Viernes: 9:00 - 18:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                    </div>
+                    
+                    <h3 style="margin-top: 2rem;">Nuestro Equipo</h3>
+                    <div class="equipo-grid">
+                        <div class="miembro-equipo">
+                            <h4>Camilo Contreras</h4>
+                            <p>Gerente General</p>
+                            <p>Tel: +57 303 200-9866</p>
+                            <p>Email: c.contreras@vorgath.com</p>
+                        </div>
+                        <div class="miembro-equipo">
+                            <h4>Maicol Vergara</h4>
+                            <p>Diseñador Principal</p>
+                            <p>Tel: +57 320 234-5678</p>
+                            <p>Email: m.vergara@vorgath.com</p>
+                        </div>
+                        <div class="miembro-equipo">
+                            <h4>Eisler Delgado</h4>
+                            <p>Joyero Maestro</p>
+                            <p>Tel: +57 315 345-6789</p>
+                            <p>Email: e.delgado@vorgath.com</p>
+                        </div>
+                        <div class="miembro-equipo">
+                            <h4>Juan Salcedo</h4>
+                            <p>Asesor de Ventas</p>
+                            <p>Tel: +57 300 456-7890</p>
+                            <p>Email: j.esteban@vorgath.com</p>
+                        </div>
+                        <div class="miembro-equipo">
+                            <h4>Andres Tovar</h4>
+                            <p>Servicio al Cliente</p>
+                            <p>Tel: +57 301 567-8901</p>
+                            <p>Email: a.tovar@vorgath.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="destinatario" required>
+                            <option value="" disabled selected>Selecciona un destinatario</option>
+                            <option value="general">Información General</option>
+                            <option value="camilo">Camilo Contreras - Gerente</option>
+                            <option value="maicol">Maicol Vergara - Diseñador</option>
+                            <option value="eisler">Eisler Delgado - Joyero</option>
+                            <option value="juan">Juan Salcedo - Ventas</option>
+                            <option value="andres">Andres Tovar - Servicio al Cliente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VORGATH</h3>
+                    <p>Joyería de lujo artesanal que fusiona tradición centenaria con diseño contemporáneo.</p>
+                    <p>Desde 1985 creando legados que trascienden generaciones.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Calle 27 # 21-59, Sincelejo</p>
+                    <p>Vorgath@gmail.com</p>
+                    <p>+57 301 744-8210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vorgath Joyería. Todos los derechos reservados. | www.vorgath.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carrito de Compras -->
+    <div id="carrito-sidebar" class="carrito-sidebar">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <button id="cerrar-carrito" class="cerrar-carrito">×</button>
+        </div>
+        <div class="carrito-items" id="carrito-items">
+            <!-- Los items del carrito se cargan aquí -->
+        </div>
+        <div class="carrito-total">
+            <p>Total: <span id="carrito-total-precio">$0 COP</span></p>
+            <button id="carrito-checkout" class="btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Modal de Métodos de Pago -->
+    <div id="pago-modal" class="pago-modal">
+        <div class="pago-modal-content">
+            <div class="pago-modal-header">
+                <h3>Finalizar Compra</h3>
+                <button id="cerrar-pago" class="cerrar-pago">×</button>
+            </div>
+            <div class="pago-modal-body">
+                <div class="resumen-compra">
+                    <h4>Resumen de tu Compra</h4>
+                    <div id="resumen-items"></div>
+                    <div class="resumen-total">
+                        <p>Total: <span id="resumen-total-precio">$0 COP</span></p>
+                    </div>
+                </div>
+                
+                <div class="metodos-pago">
+                    <h4>Selecciona Método de Pago</h4>
+                    <div class="opciones-pago">
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodo-pago" value="tarjeta" checked>
+                            <span>Tarjeta de Crédito/Débito</span>
+                        </label>
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodo-pago" value="paypal">
+                            <span>PayPal</span>
+                        </label>
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodo-pago" value="transferencia">
+                            <span>Transferencia Bancaria</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Formulario de tarjeta -->
+                    <div id="form-tarjeta" class="form-pago">
+                        <div class="form-group">
+                            <input type="text" placeholder="Número de Tarjeta" maxlength="16" id="numero-tarjeta">
+                        </div>
+                        <div class="form-fila">
+                            <div class="form-group">
+                                <input type="text" placeholder="MM/AA" maxlength="5" id="fecha-tarjeta">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="CVV" maxlength="3" id="cvv-tarjeta">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre en la Tarjeta" id="nombre-tarjeta">
+                        </div>
+                    </div>
+                    
+                    <!-- Información PayPal -->
+                    <div id="info-paypal" class="form-pago" style="display: none;">
+                        <p>Serás redirigido a PayPal para completar tu pago de forma segura.</p>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email de PayPal" id="email-paypal">
+                        </div>
+                    </div>
+                    
+                    <!-- Información Transferencia -->
+                    <div id="info-transferencia" class="form-pago" style="display: none;">
+                        <p>Datos para transferencia bancaria:</p>
+                        <div class="datos-transferencia">
+                            <p><strong>Banco:</strong> Banco Nacional</p>
+                            <p><strong>Cuenta:</strong> 1234-5678-9012-3456</p>
+                            <p><strong>Beneficiario:</strong> Vorgath Joyería S.A.</p>
+                            <p><strong>SWIFT/BIC:</strong> BNACUS33</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Número de Comprobante" id="comprobante-transferencia">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pago-acciones">
+                    <button id="confirmar-pago" class="btn btn-confirmar">Confirmar Pago</button>
+                    <button id="cancelar-pago" class="btn btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay para el carrito y modal de pago -->
+    <div id="carrito-overlay" class="carrito-overlay"></div>
+
+    <script src="producto.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
